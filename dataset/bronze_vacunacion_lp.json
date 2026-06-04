@@ -1,0 +1,104 @@
+{
+	"name": "bronze_vacunacion_lp",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dw_vacunas",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "bronze"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id_registro",
+				"type": "varchar"
+			},
+			{
+				"name": "cod_paciente",
+				"type": "varchar"
+			},
+			{
+				"name": "documento_identidad",
+				"type": "varchar"
+			},
+			{
+				"name": "nombres",
+				"type": "varchar"
+			},
+			{
+				"name": "primer_apellido",
+				"type": "varchar"
+			},
+			{
+				"name": "segundo_apellido",
+				"type": "varchar"
+			},
+			{
+				"name": "genero",
+				"type": "varchar"
+			},
+			{
+				"name": "fec_nacimiento",
+				"type": "varchar"
+			},
+			{
+				"name": "municipio",
+				"type": "varchar"
+			},
+			{
+				"name": "pueblo_indigena",
+				"type": "varchar"
+			},
+			{
+				"name": "fec_vacunacion",
+				"type": "varchar"
+			},
+			{
+				"name": "cod_vacuna",
+				"type": "varchar"
+			},
+			{
+				"name": "desc_vacuna",
+				"type": "varchar"
+			},
+			{
+				"name": "nro_dosis",
+				"type": "varchar"
+			},
+			{
+				"name": "cod_establecimiento",
+				"type": "varchar"
+			},
+			{
+				"name": "desc_establecimiento",
+				"type": "varchar"
+			},
+			{
+				"name": "depto",
+				"type": "varchar"
+			},
+			{
+				"name": "nro_lote",
+				"type": "varchar"
+			},
+			{
+				"name": "temp_conservacion",
+				"type": "varchar"
+			},
+			{
+				"name": "edad_dias",
+				"type": "varchar"
+			},
+			{
+				"name": "via_aplicacion",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "bronze",
+			"table": "vacunacion_la_paz"
+		}
+	}
+}

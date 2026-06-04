@@ -1,0 +1,132 @@
+{
+	"name": "bronze_vacunacion_rural",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dw_vacunas",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "bronze"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "record_id",
+				"type": "varchar"
+			},
+			{
+				"name": "sync_timestamp",
+				"type": "varchar"
+			},
+			{
+				"name": "device_id",
+				"type": "varchar"
+			},
+			{
+				"name": "patient_id",
+				"type": "varchar"
+			},
+			{
+				"name": "patient_ci",
+				"type": "varchar"
+			},
+			{
+				"name": "patient_name",
+				"type": "varchar"
+			},
+			{
+				"name": "patient_last_name_1",
+				"type": "varchar"
+			},
+			{
+				"name": "patient_last_name_2",
+				"type": "varchar"
+			},
+			{
+				"name": "patient_sex",
+				"type": "varchar"
+			},
+			{
+				"name": "patient_birth_date",
+				"type": "varchar"
+			},
+			{
+				"name": "patient_department",
+				"type": "varchar"
+			},
+			{
+				"name": "patient_municipality",
+				"type": "varchar"
+			},
+			{
+				"name": "patient_community",
+				"type": "varchar"
+			},
+			{
+				"name": "patient_indigenous",
+				"type": "varchar"
+			},
+			{
+				"name": "vaccination_date",
+				"type": "varchar"
+			},
+			{
+				"name": "vaccine_code",
+				"type": "varchar"
+			},
+			{
+				"name": "vaccine_name",
+				"type": "varchar"
+			},
+			{
+				"name": "dose_number",
+				"type": "varchar"
+			},
+			{
+				"name": "facility_code",
+				"type": "varchar"
+			},
+			{
+				"name": "facility_name",
+				"type": "varchar"
+			},
+			{
+				"name": "lot_number",
+				"type": "varchar"
+			},
+			{
+				"name": "storage_temp_celsius",
+				"type": "varchar"
+			},
+			{
+				"name": "patient_age_days",
+				"type": "varchar"
+			},
+			{
+				"name": "administration_route",
+				"type": "varchar"
+			},
+			{
+				"name": "gps_latitude",
+				"type": "varchar"
+			},
+			{
+				"name": "gps_longitude",
+				"type": "varchar"
+			},
+			{
+				"name": "gps_accuracy_meters",
+				"type": "varchar"
+			},
+			{
+				"name": "observations",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "bronze",
+			"table": "vacunacion_rural_movil"
+		}
+	}
+}

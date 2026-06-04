@@ -1,0 +1,108 @@
+{
+	"name": "bronze_vacunacion_sc",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dw_vacunas",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "bronze"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "registro_id",
+				"type": "varchar"
+			},
+			{
+				"name": "paciente_id",
+				"type": "varchar"
+			},
+			{
+				"name": "ci_paciente",
+				"type": "varchar"
+			},
+			{
+				"name": "nombre_paciente",
+				"type": "varchar"
+			},
+			{
+				"name": "apellido_paterno",
+				"type": "varchar"
+			},
+			{
+				"name": "apellido_materno",
+				"type": "varchar"
+			},
+			{
+				"name": "sexo",
+				"type": "varchar"
+			},
+			{
+				"name": "fecha_nacimiento",
+				"type": "varchar"
+			},
+			{
+				"name": "municipio_residencia",
+				"type": "varchar"
+			},
+			{
+				"name": "comunidad_indigena",
+				"type": "varchar"
+			},
+			{
+				"name": "fecha_vacunacion",
+				"type": "varchar"
+			},
+			{
+				"name": "vacuna_id",
+				"type": "varchar"
+			},
+			{
+				"name": "vacuna_nombre",
+				"type": "varchar"
+			},
+			{
+				"name": "numero_dosis",
+				"type": "varchar"
+			},
+			{
+				"name": "establecimiento_id",
+				"type": "varchar"
+			},
+			{
+				"name": "nombre_establecimiento",
+				"type": "varchar"
+			},
+			{
+				"name": "departamento",
+				"type": "varchar"
+			},
+			{
+				"name": "lote_vacuna",
+				"type": "varchar"
+			},
+			{
+				"name": "temperatura_conservacion",
+				"type": "varchar"
+			},
+			{
+				"name": "edad_dias_aplicacion",
+				"type": "varchar"
+			},
+			{
+				"name": "aplicacion_oportuna",
+				"type": "varchar"
+			},
+			{
+				"name": "via_administracion",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "bronze",
+			"table": "vacunacion_santa_cruz"
+		}
+	}
+}
